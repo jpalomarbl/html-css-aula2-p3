@@ -1,0 +1,286 @@
+/* Resoluciones: 450, 865, 1920 */
+
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Serif:wght@600&display=swap");
+
+/* ESTILOS GENERALES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 59, 74);
+  background-color: rgb(247, 247, 247);
+
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
+}
+
+span.negrita {
+  font-weight: 700;
+}
+
+/* CABECERA */
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+}
+
+header > a {
+  margin: 2vh 5vw;
+}
+
+header > ul {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 5vh 5vw;
+}
+
+header > ul > li {
+  text-transform: uppercase;
+  margin: 0 1vw;
+}
+
+header > ul > li:first-child::after {
+  content: "|";
+  padding-left: 3vw;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(0, 59, 74);
+}
+
+header > ul > li > a:hover {
+  color: rgb(191, 12, 240);
+}
+
+/* -----index.html----- */
+/* HERO */
+section.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  background-image: url("../img/hero-image-home.jpg");
+  background-size: 200%;
+  background-position: center;
+
+  height: 50vh;
+}
+
+section.hero > h1 {
+  text-align: left;
+
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+
+  margin: 0 5vw;
+}
+
+section.hero > h1 > span::after {
+  content: "\A";
+  white-space: pre;
+}
+
+/* NEWSLETTER */
+section.newsletter {
+  margin: 2vh 5vw 8vh 5vw;
+}
+
+section.newsletter > h2 {
+  font-size: 2.3rem;
+}
+
+section.newsletter > form {
+  display: flex;
+  flex-direction: column;
+}
+
+section.newsletter > form > label {
+  margin-bottom: 1vh;
+}
+
+section.newsletter > form > input[type="text"] {
+  margin-bottom: 2vh;
+  padding: 0.5vh 1vw;
+
+  border-color: rgb(229, 225, 254);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+section.newsletter > form > input[type="submit"] {
+  width: fit-content;
+
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+
+  padding: 1vh 3vw;
+
+  background-color: rgb(0, 59, 74);
+
+  border-radius: 3px;
+  border: none;
+
+  cursor: pointer;
+}
+
+section.newsletter > form > input[type="submit"]:hover {
+  background-color: rgb(191, 12, 240);
+}
+
+section.newsletter > form > small > a {
+  text-decoration: none;
+  color: rgb(191, 12, 240);
+  border-bottom: 2px dotted;
+}
+
+section.newsletter > form > small > a:hover {
+  color: rgb(0, 59, 74);
+}
+
+section.newsletter > form > div.policy {
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+section.newsletter > form > div.policy > input {
+  margin: 0;
+}
+
+section.newsletter > form > div.policy > label {
+  font-size: 0.8rem;
+}
+
+/* ARTICLES */
+section.articles {
+  background-color: rgb(229, 225, 254);
+  padding-top: 5vh;
+  padding-bottom: 7vh;
+}
+
+section.articles > article {
+  margin: 3vh 5vw 6vh 5vw;
+}
+
+section.articles > article > img {
+  width: 90vw;
+}
+
+section.articles > article > small {
+  display: block;
+  width: 100%;
+
+  text-align: right;
+  font-size: 0.6rem;
+}
+
+section.articles > article > h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+section.articles > article > a {
+  display: block;
+  
+    width: fit-content;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+
+  padding: 1vh 3vw;
+
+  margin-top: 4vh;
+
+  background-color: rgb(0, 59, 74);
+
+  border-radius: 3px;
+  border: none;
+}
+
+section.articles > article > a:hover {
+    background-color: rgb(191, 12, 240);
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+
+    padding-top: 4vh;
+    padding-bottom: 10vh;
+
+    background-color: rgb(0, 59, 74);
+    color: rgb(255, 255, 255);
+}
+
+footer > img {
+    width: 20vw;
+
+    text-align: center;
+}
+
+footer > p {
+    font-size: 0.9rem;
+}
+
+footer > ul {
+    display: flex;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+footer > ul.links {
+    flex-direction: column;
+}
+
+footer > ul.links > li {
+    text-align: center;
+    margin: 0.5vh;
+}
+
+footer > ul.links > li > a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+footer > ul.links > li > a:hover {
+    color: rgb(229, 225, 254);
+}
+
+footer > ul.social > li > a:hover {
+    opacity: 0.7;
+}
