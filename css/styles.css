@@ -296,6 +296,124 @@ section.articles > article > a:hover {
   background-color: rgb(191, 12, 240);
 }
 
+/* -----blog.html----- */
+/* BLOG ENTRIES */
+section.entries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+}
+
+section.entries > h1 {
+  font-size: 2.5rem;
+  font-family: "Noto Serif", serif;
+
+  margin: 5vw;
+}
+
+section.entries > article {
+  margin: 5vw;
+  padding-bottom: 1vh;
+
+  background-color: rgb(255, 255, 255);
+
+  border-style: solid;
+  border-color: rgb(229, 225, 254);
+  border-width: 2px;
+  border-radius: 1px;
+}
+
+section.entries > article > div.img {
+  position: relative;
+  height: fit-content;
+
+  height: 35vh;
+}
+
+section.entries > article > div.img > img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+section.entries > article > div.img > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 2vw;
+  padding: 2vw;
+
+  background-color: rgb(0, 59, 74);
+
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+section.entries > article > div.img > a:hover {
+  background-color: rgb(191, 12, 240);
+}
+
+section.entries > article > div.img > small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin: 2vw;
+  padding: 1vw;
+
+  background-color: rgba(247, 247, 247, 0.5);
+
+  font-size: 0.7rem;
+}
+
+section.entries > article > div.text {
+  padding: 1vh 5vw;
+}
+
+section.entries > article > div.text > p:first-child {
+  margin: 0;
+
+  color: rgb(158, 157, 171);
+  font-size: 0.8rem;
+}
+
+section.entries > article > div.text > p:nth-child(3) {
+  margin: 1vh 0;
+
+  font-size: 0.9rem;
+}
+
+section.entries > article > div.text > a:first-of-type {
+  color: rgb(0, 59, 74);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+section.entries > article > div.text > a:first-of-type:hover {
+  color: rgb(191, 12, 240);
+}
+
+section.entries > article > div.text > a > h3 {
+  margin: 0;
+}
+
+section.entries > article > div.text > a:last-child {
+  text-decoration: none;
+  color: rgb(191, 12, 240);
+
+  border-bottom: 2px dotted;
+}
+
+section.entries > article > div.text > a:last-child:hover {
+  color: rgb(0, 59, 74);
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 450px) and (max-width: 865px) {
   /* FOOTER */
@@ -390,7 +508,7 @@ section.articles > article > a:hover {
 
   footer > div.left {
     align-items: flex-start;
-    
+
     margin-left: 5vw;
   }
 
@@ -406,8 +524,8 @@ section.articles > article > a:hover {
   }
 
   footer > div.right > ul.links > li {
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
   footer > div.right > ul.links > li:first-child:after,
