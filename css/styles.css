@@ -647,6 +647,7 @@ aside > nav > h3 {
 
 aside > nav > ul {
   display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 
@@ -676,6 +677,42 @@ aside > nav > ul > li > a:hover {
   background-color: rgb(191, 12, 240);
 
   color: rgb(255, 255, 255);
+}
+
+/* -----videos.html----- */
+section.videos {
+  margin-bottom: 15vh;
+}
+
+section.videos > h1 {
+  margin: 5vw;
+
+  font-family: "Noto Serif", serif;
+  font-size: 2.3rem;
+}
+
+section.videos > article {
+  margin: 5vw;
+  padding-bottom: 1vh;
+
+  background-color: rgb(255, 255, 255);
+
+  border: solid 2px rgb(229, 225, 254);
+  border-radius: 1px;
+}
+
+section.videos > article > iframe {
+  width: 100%;
+  height: 21vh;
+}
+
+section.videos > article > h2,
+section.videos > article > p {
+  margin: 3vw;
+}
+
+section.videos > article > h2 {
+  font-size: 1.7rem;
 }
 
 /* MEDIA QUERIES */
@@ -851,6 +888,31 @@ aside > nav > ul > li > a:hover {
 
   aside > div > article > small {
     display: block;
+  }
+
+  /* -----videos.html----- */
+  section.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+    row-gap: 5vw;
+
+    margin: 0 3vw 15vh 3vw;
+  }
+
+  section.videos > h1 {
+    grid-column: span 2;
+
+    margin: 3vh 0;
+  }
+
+  section.videos > article {
+    margin: 0;
+  }
+
+  section.videos > article > h2,
+  section.videos > article > p {
+    margin: 2vw;
   }
 }
 
@@ -1054,6 +1116,7 @@ aside > nav > ul > li > a:hover {
   }
 
   /* -----entrada.html----- */
+  /* ARTICLE */
   main.entrada {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1063,14 +1126,13 @@ aside > nav > ul > li > a:hover {
     padding-right: 10vw;
   }
 
+  section.entry {
+    grid-column: span 2;
+  }
+
   /* BREADCRUMBS MENU */
   nav.breadcrumbs {
     padding-left: 6vw;
-  }
-
-  /* ARTICLE */
-  section.entry {
-    grid-column: span 2;
   }
 
   section.entry > article {
@@ -1098,12 +1160,37 @@ aside > nav > ul > li > a:hover {
   aside > nav > ul {
     flex-wrap: wrap;
   }
-  
+
   aside > nav > ul > li {
     margin: 0.5vw;
   }
 
   aside > nav > ul > li > a {
     display: block;
+  }
+
+  /* -----videos.html----- */
+  section.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2vw;
+    row-gap: 2vw;
+
+    margin: 0 3vw 15vh 3vw;
+  }
+
+  section.videos > h1 {
+    grid-column: span 3;
+
+    margin: 3vh 0;
+  }
+
+  section.videos > article {
+    margin: 0;
+  }
+
+  section.videos > article > h2,
+  section.videos > article > p {
+    margin: 2vw;
   }
 }
