@@ -565,7 +565,7 @@ section.entry > article > blockquote > span::before {
 
 /* ASIDE - RELATED ARTICLES */
 aside {
-  margin: 5vw;
+  margin: 5vw 5vw 20vw 5vw;
 
   width: 90%;
 }
@@ -640,40 +640,42 @@ aside > div > article > small {
 
 /* ASIDE - CATEGORIES */
 aside > nav > h3 {
-    margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 aside > nav > ul {
-    display: flex;
+  display: flex;
 
-    list-style: none;
+  list-style: none;
 
-    padding: 0;
+  padding: 0;
 }
 
 aside > nav > ul > li {
-    margin: 1vw;
+  margin: 1vw;
 }
 
 aside > nav > ul > li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 aside > nav > ul > li > a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 
-    border: solid 1px rgb(0, 59, 74);
+  border: solid 1px rgb(0, 59, 74);
 
-    padding: 1vw;
+  padding: 1vw;
 }
 
 aside > nav > ul > li > a:hover {
-    background-color: rgb(191, 12, 240);
+  background-color: rgb(191, 12, 240);
 
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 /* MEDIA QUERIES */
@@ -810,6 +812,45 @@ aside > nav > ul > li > a:hover {
   /* NAVIGATOR */
   section.entries > nav > ul > li > a {
     padding: 1vh 1vw;
+  }
+
+  /* -----entrada.html----- */
+  /* ARTICLE */
+  section.entry > article {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  /* ASIDE - RELATED ARTICLES */
+  aside {
+    width: 94%;
+  }
+
+  aside > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3vw;
+  }
+
+  aside > div > h3 {
+    grid-column: span 3;
+  }
+
+  aside > div > article > div {
+    height: 16vh;
+  }
+
+  aside > div > article > div > a {
+    margin: 1vw;
+    padding: 1vw;
+  }
+
+  aside > div > article > div > img {
+    object-fit: scale-down;
+  }
+
+  aside > div > article > small {
+    display: block;
   }
 }
 
