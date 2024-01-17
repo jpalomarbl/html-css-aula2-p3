@@ -1052,4 +1052,58 @@ aside > nav > ul > li > a:hover {
   section.entries > nav > ul > li > a {
     padding: 1vh 0.5vw;
   }
+
+  /* -----entrada.html----- */
+  main.entrada {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  /* BREADCRUMBS MENU */
+  nav.breadcrumbs {
+    padding-left: 6vw;
+  }
+
+  /* ARTICLE */
+  section.entry {
+    grid-column: span 2;
+  }
+
+  section.entry > article {
+    margin: 0;
+    padding: 2vw;
+  }
+
+  section.entry > article > blockquote {
+    padding-left: 2vw;
+    margin-left: 3vw;
+  }
+
+  /* ASIDE */
+  aside {
+    margin: 0;
+  }
+
+  /* ASIDE - RELATED ARTICLES */
+  aside > div > article > div > a {
+    margin: 0.5vw;
+    padding: 0.5vw;
+  }
+
+  /* ASIDE - CATEGORIES */
+  aside > nav > ul {
+    flex-wrap: wrap;
+  }
+  
+  aside > nav > ul > li {
+    margin: 0.5vw;
+  }
+
+  aside > nav > ul > li > a {
+    display: block;
+  }
 }
